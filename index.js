@@ -74,7 +74,7 @@ client.once("ready", () => {
     updateStatus();
 
     let guildId = "853318314147577906"; //sever id
-    let clientId = "497853394225070091"; //bot id
+    let clientId = "1041077502631751781"; //bot id
 
     const rest = new REST({ version: '9'}).setToken(process.env.token);
 
