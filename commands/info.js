@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
             {name: "Version", value: "1.0.0"},
             {name: "Creator", value: "Edwins#1025"},
             {name: "Mikailyone", value: "https://discord.gg/uwcxG9fx8d"},
-            {name: "Underworld", value: "discord.gg/SNXdvsstGR"}
+            {name: "Underworld", value: "https://discord.gg/SNXdvsstGR"}
         )
         .setTimestamp();
 
