@@ -7,76 +7,81 @@ module.exports.run = async (client, message, args) => {
     const options = [
         {
 
-        label: "Valorant",
-        value: "986065525819969638",
-        emoji: "1️⃣"
+            label: "Tabu",
+            value: "1041089564309209088",
+            emoji: "1041091454929469563"
         },
-    {
-
-        label: "PUBG",
-        value: "986065400527732756",
-        emoji: "2️⃣"
-    },
-    {
-
-        label: `Counter Srike:Global Offensive`,
-        value: "986065577376374814",
-        emoji: "3️⃣"
-    },
-    {
-
-        label: `Euro Truck Simulator 2`,
-        value: "986065851264426014",
-        emoji: "4️⃣"
-    },
-    {
-
-        label: `league of legends`,
-        value: "986065487278522478",
-        emoji: "5️⃣"
-    },
-    {
-
-        label: "Minecraft",
-        value: "986065706581917737",
-        emoji: "6️⃣"
-    },
-    {
-
-        label: `Grand Theft Auto`,
-        value: "986065742577426462",
-        emoji: "7️⃣"
-    },
-    {
-
-        label: `Mobile Legends`,
-        value: "986065615494193202",
-        emoji: "8️⃣"
-    },
-    {
-
-        label: `Forza Horizon`,
-        value: "986065763423125585",
-        emoji: "9️⃣"
-    },
-    {
-
-        label: "Gartic.io",
-        value: "1000914562880639017",
-        emoji: "1000913734069399562"
-    },
-    {
-
-        label: "Codenames",
-        value: "1000914549567926383",
-        emoji: "1000913736602746930"
-    },
-    {
-
-        label: `Among Us`,
-        value: "1000914564042477678",
-        emoji: "1000913739471663104"
-    }
+        {
+    
+            label: "Lol",
+            value: "1041089601038733462",
+            emoji: "1041091552010846218"
+        },
+        {
+            label: "Valorant",
+            value: "1041089605769891981",
+            emoji: "1041091597393207356"
+        },
+        {
+            label: "Terraria",
+            value: "1041089703031623865",
+            emoji: "1041091634848354334"
+        },
+        {
+            label: "Rocket League",
+            value: "1041089772124377208",
+            emoji: "1041091685846892585"
+        },
+        {
+            label: "PUBG",
+            value: "1041089753312940133",
+            emoji: "1041091732261052456"
+        },
+        {
+            label: "Minecraft",
+            value: "1041089928626458625",
+            emoji: "1041091778452918323"
+        },
+        {
+            label: "CSGO",
+            value: "1041089973899759667",
+            emoji: "1041091839480045628"
+        },
+        {
+            label: "Gartic.io/phone",
+            value: "1041090051762827264",
+            emoji: "1041091880538079282"
+        },
+        {
+            label: "Among us",
+            value: "1041090102891384942",
+            emoji: "1041091926633500813"
+        },
+        {
+            label: "Vampir Köylü",
+            value: "1041090175293472848",
+            emoji: "1041091979058090094"
+        },
+        {
+            label: "Doğruluk Cesaret",
+            value: "1041090242024849478",
+            emoji: "1041092040496271361"
+        },
+        {
+            label: "Zula",
+            value: "1041090299780399204",
+            emoji: "1041092139473453136"
+        },
+        {
+            label: "Gta V",
+            value: "1041090347591282759",
+            emoji: "1041092187322077224"
+        },
+        {
+            label: "Town of Salem",
+            value: "1041090387458138205",
+            emoji: "1041092286689312849"
+        }
 
     ];
 
@@ -86,7 +91,7 @@ module.exports.run = async (client, message, args) => {
         new discord.MessageSelectMenu()
         .setCustomId("roles")
         .setMinValues(0)
-        .setMaxValues(12)
+        .setMaxValues(15)
         .setPlaceholder("Bir rol seç.")
         .addOptions(options)
     )

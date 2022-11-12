@@ -7,28 +7,16 @@ module.exports.run = async (client, message, args) => {
     const options = [
     {
 
-        label: "Üniversite",
-        value: "972090167663931412",
-        emoji: "👤"
+        label: "Single",
+        value: "938787050382041118",
+        emoji: "😈"
     },
     {
 
-        label: "Lise",
-        value: "972090467871236166",
-        emoji: "🙎‍♂️"
+        label: "Lovers",
+        value: "938787083097620500",
+        emoji: "🥰"
     },
-    {
-
-        label: "Mezun",
-        value: "972090569327247370",
-        emoji: "👨‍🎓"
-    },
-    {
-
-        label: `Study Buddy`,
-        value: "999815257348395091",
-        emoji: "📚"
-    }
 
     ];
 
@@ -38,12 +26,12 @@ module.exports.run = async (client, message, args) => {
         new discord.MessageSelectMenu()
         .setCustomId("roles")
         .setMinValues(0)
-        .setMaxValues(4)
+        .setMaxValues(1)
         .setPlaceholder("Bir rol seç.")
         .addOptions(options)
     )
 
-    return message.channel.send({content: "**Aşağıdaki rollerden kendinize uygun eğitim rolü seçebilirsiniz**\n*Study Buddy rolünü seçerek ders kanalları görebilirsiniz.*", components: [Row] });
+    return message.channel.send({content: "**Aşağıdaki rollerden kendinize uygun ilişki rolü seçebilirsiniz**", components: [Row] });
 
 }
 
