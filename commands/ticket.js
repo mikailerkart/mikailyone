@@ -55,8 +55,13 @@ module.exports.run = async (client, message, args, prefix) => {
                 ADD_REACTIONS: true
             });
 
+            settedParent.permissionOverwrites.edit(message.guild.roles.cache.find(x => x.name.toLowerCase() == "member"), { // üye rol
+                VIEW_CHANNEL: false,
+                SEND_MESSAGES: false,
+            });
+
             // Perms zodat de gebruikers die admin zijn alles kunnen zien van zijn ticket.
-            settedParent.permissionOverwrites.edit(message.guild.roles.cache.find(x => x.name.toLowerCase() == "owners"), { // yetki ismi
+            settedParent.permissionOverwrites.edit(message.guild.roles.cache.find(x => x.name.toLowerCase() == "owners"), { // yetki rol
                 VIEW_CHANNEL: true,
                 CREATE_INSTANT_INVITE: false,
                 READ_MESSAGE_HISTORY: true,
